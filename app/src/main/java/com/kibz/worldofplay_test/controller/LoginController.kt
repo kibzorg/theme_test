@@ -54,7 +54,7 @@ class LoginController(private val activity: LoginActivity) {
     fun callLoginAction(email: String?, password: String?) {
         if (!validate(email, password)) return
 
-        activity.isApiCalling(true)
+        activity?.isApiCalling(true)
         LoginManager.getMockLogin(
             activity,
             /*getLogin(*/
