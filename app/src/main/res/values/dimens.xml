@@ -1,0 +1,12 @@
+<resources>
+
+    <dimen name="txt_header">@dimen/_20sdp</dimen>
+    <dimen name="txt_title">@dimen/_18sdp</dimen>
+    <dimen name="txt_sub_title">@dimen/_14sdp</dimen>
+    <dimen name="txt_l">@dimen/_14sdp</dimen>
+    <dimen name="txt_m">@dimen/_12sdp</dimen>
+    <dimen name="txt_s">@dimen/_10sdp</dimen>
+
+    <dimen name="txt_button">@dimen/_14sdp</dimen>
+    <dimen name="txt_button_small">@dimen/_12sdp</dimen>
+</resources>

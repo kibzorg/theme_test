@@ -1,0 +1,62 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion androidVersions.compileSdkVersion
+    buildToolsVersion androidVersions.buildToolsVersion
+
+    defaultConfig {
+        applicationId "com.kibz.worldofplay_test"
+        minSdkVersion androidVersions.minSdkVersion
+        targetSdkVersion androidVersions.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner androidVersions.testInstrument
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    dataBinding {
+        enabled true
+    }
+    compileOptions {
+        sourceCompatibility 1.8
+        targetCompatibility 1.8
+    }
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation depencency.kotlin_lib
+    implementation depencency.appCompat
+    implementation depencency.core_ktx
+    implementation depencency.material
+    implementation depencency.annotation
+    implementation depencency.lifecycle
+    implementation depencency.sdp
+    implementation depencency.androidx_preference
+    implementation depencency.swiperefresh
+
+    implementation depencency.retrofit
+    implementation depencency.convertor_gson
+    implementation depencency.adapter_rxjava
+    implementation depencency.rx_java
+    implementation depencency.rx_android
+    implementation depencency.logging_interceptor
+
+    testImplementation test_dependency.jUnit
+
+    androidTestImplementation test_dependency.android_jUnit
+    androidTestImplementation test_dependency.espresso
+}

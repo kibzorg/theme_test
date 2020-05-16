@@ -1,0 +1,62 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/gold</item>
+    </style>
+
+    <!--Common Style-->
+    <style name="mButton_lgt">
+        <item name="android:paddingStart">@dimen/_8sdp</item>
+        <item name="android:paddingEnd">@dimen/_8sdp</item>
+        <item name="android:paddingTop">@dimen/_5sdp</item>
+        <item name="android:paddingBottom">@dimen/_5sdp</item>
+        <item name="android:layout_marginTop">@dimen/_10sdp</item>
+        <item name="android:layout_marginStart">@dimen/_20sdp</item>
+        <item name="android:layout_marginEnd">@dimen/_20sdp</item>
+        <item name="android:layout_marginBottom">@dimen/_20sdp</item>
+        <item name="android:background">@drawable/button_state_light</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/txt_button</item>
+    </style>
+
+    <!--Light Theme-->
+    <style name="mEditField_lgt">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/txt_l</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:padding">@dimen/_5sdp</item>
+        <item name="android:layout_marginTop">@dimen/_5sdp</item>
+    </style>
+
+    <style name="page_background_lgt">
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="card_background_lgt">
+        <item name="android:background">@color/white</item>
+        <item name="android:shadowColor">@color/black</item>
+        <item name="android:elevation">@dimen/_8sdp</item>
+    </style>
+    <!--Dark Theme-->
+    <style name="mEditField_drk">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/txt_l</item>
+        <item name="android:background">@color/black</item>
+        <item name="android:padding">@dimen/_5sdp</item>
+        <item name="android:layout_marginTop">@dimen/_5sdp</item>
+    </style>
+
+    <style name="page_background_drk">
+        <item name="android:background">@color/black</item>
+    </style>
+
+    <style name="card_background_drk">
+        <item name="android:background">@color/black</item>
+        <item name="android:shadowColor">@color/white</item>
+        <item name="android:elevation">@dimen/_8sdp</item>
+    </style>
+</resources>

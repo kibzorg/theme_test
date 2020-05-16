@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme_Light" parent="AppTheme">
+        <item name="pageBackground">@style/page_background_lgt</item>
+        <item name="cardBackground">@style/card_background_lgt</item>
+        <item name="textField">@style/mEditField_lgt</item>
+        <item name="editTextField">@style/mEditField_lgt</item>
+        <item name="button">@style/mButton_lgt</item>
+    </style>
+
+    <style name="Theme_Dark" parent="AppTheme">
+        <item name="pageBackground">@style/page_background_drk</item>
+        <item name="cardBackground">@style/card_background_drk</item>
+        <item name="textField">@style/mEditField_drk</item>
+        <item name="editTextField">@style/mEditField_lgt</item>
+        <item name="button">@style/mButton_lgt</item>
+    </style>
+
+</resources>

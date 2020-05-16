@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="story"
+            type="com.kibz.worldofplay_test.data.Story" />
+
+        <variable
+            name="listener"
+            type="com.kibz.worldofplay_test.ui.callback.Interfaces.OnRecyclerItemClick" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp"
+        android:onClick="@{(v)->listener.onItemClick(v,story)}"
+        android:padding="@dimen/_8sdp">
+
+        <LinearLayout
+            style="?cardBackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/_10sdp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="?textField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{story.title}" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="?textField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:alpha="0.80"
+                android:text="@{`By: ` +story.by}"
+                android:textSize="@dimen/txt_m" />
+            <!--            android:text="@{`Score: ` +story.score}"-->
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</layout>
